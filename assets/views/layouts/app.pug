@@ -14,10 +14,43 @@ html(lang="en")
     link(rel='icon', type='image/png', sizes='16x16', href='/img/iconsfavicon-16x16.png')
     link(rel='mask-icon', href='/img/icons/safari-pinned-tab.svg', color='#5bbad5')
     link(rel="manifest", href="/manifest.json")
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
     link(rel='stylesheet', href='/css/styles.css')
-    link(rel='stylesheet', href='/css/styles.css')
-    
-    
     script(async='', defer='', src='https://buttons.github.io/buttons.js')
   body
+    header
+      .logo-area
+        a(href='index.html') Logo
+      .menu
+        ul
+          li
+            a(href='chloe.html')
+              | Chloe
+          li
+            a(href='home.html')
+              | Home
+          li
+            a(href='/about')
+              | About
+      .icon-links
+        ul.quick-options
+          li
+            a(href='chloe.html')
+              i.fa.fa-users(aria-hidden='true')
+          li
+            a(href='home.html')
+              i.fa.fa-comments(aria-hidden='true')
+          li
+            a(href='home.html')
+              i.fa.fa-bell(aria-hidden='true')
+        .privacy
+          i.fa.fa-lock(aria-hidden='true')
+      .search-area
+        ul
+          li
+            i.fa.fa-search(aria-hidden='true')
+          li
+            input(type='text', name='search')
+          li
+            i.fa.fa-times(aria-hidden='true')
     block content
